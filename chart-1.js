@@ -63,7 +63,7 @@
 
   d3.queue()
     .defer(d3.json, "world-50m.json")
-    .defer(d3.csv, "oecd_adjusted.csv",function(d) {
+    .defer(d3.csv, "OECD_adjusted.csv",function(d) {
       console.log(d)
       d.value = +d.value;
       d.lat = +d.lat;
